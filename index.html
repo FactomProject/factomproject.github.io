@@ -42,6 +42,12 @@
 <p>Check the status of your local client <a href="http://localhost:8090/controlpanel">here</a>.</p>
 
 <hr />
+<p>2016-2-08</p>
+<p>Factomd has a hiccup where restarting factomd will cause it to crash.  If you do happen to close factomd, you need to delete the ldb files in the .factom directory, to download the entire blockchain again.  The error occurs at around height 22800.  We are preparing an update to fix this restart crashing problem. If you leave factomd running if it had synced from before 22800, then it should work fine.  </p>
+<hr />
+
+
+<hr />
 <p>2015-11-06</p>
 <p>The main Factom server was taken down around 4pm for maintenance and came back up without problems.</p>
 <hr />
@@ -61,7 +67,7 @@
 <p>You might also want to check the <a href="https://github.com/FactomProject/WorkItems/issues">Issues</a> page to see if someone has been assigned to fix it.</p>
 
 <h1>
-<a id="factom-is-currently-up" class="anchor" href="#factom-is-currently-up" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Factom is currently Up.</strong></h1>
+<a id="factom-is-currently-up" class="anchor" href="#factom-is-currently-up" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Factom is currently Up, but crashes on restart.</strong></h1>
         </article>
       </div>
     </div>
